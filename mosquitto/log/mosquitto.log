@@ -1125,3 +1125,380 @@ To fix this, use `chmod 0700 /mosquitto/config/passwd`.
 1759779098: Client nodered3f4d36b1fd8eaa4f disconnected.
 1759779098: New connection from 172.20.0.5:49618 on port 1883.
 1759779098: New client connected from 172.20.0.5:49618 as noderedb2ac2d829bc340ba (p2, c1, k60, u'aluno').
+1759788273: mosquitto version 2.0.22 starting
+1759788273: Config loaded from /mosquitto/config/mosquitto.conf.
+1759788273: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+1759788273: Opening ipv4 listen socket on port 1883.
+1759788273: Opening websockets listen socket on port 9001.
+1759788273: mosquitto version 2.0.22 running
+1759788279: New connection from 172.18.0.6:52506 on port 1883.
+1759788279: New client connected from 172.18.0.6:52506 as nodered2a3352464e18f3a1 (p2, c1, k60, u'aluno').
+1759788299: Client nodered2a3352464e18f3a1 disconnected.
+1759788300: mosquitto version 2.0.22 terminating
+1759788300: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1759788304: mosquitto version 2.0.22 starting
+1759788304: Config loaded from /mosquitto/config/mosquitto.conf.
+1759788304: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+1759788304: Opening ipv4 listen socket on port 1883.
+1759788304: Opening websockets listen socket on port 9001.
+1759788304: mosquitto version 2.0.22 running
+1759788307: New connection from 172.18.0.5:55642 on port 1883.
+1759788307: New client connected from 172.18.0.5:55642 as noderede69b1d0d99110d1d (p2, c1, k60, u'aluno').
+1759788543: New client connected from 172.18.0.1:57418 as pub-73f623628823c (p2, c1, k60, u'aluno').
+1759788555: New client connected from 172.18.0.1:60134 as sub-99201e11db0178 (p2, c1, k60, u'aluno').
+1759789171: New connection from 172.18.0.6:42748 on port 1883.
+1759789171: Client noderedd807475e858d79fd disconnected, not authorised.
+1759789186: New connection from 172.18.0.6:55036 on port 1883.
+1759789186: Client noderedd807475e858d79fd disconnected, not authorised.
+1759789201: New connection from 172.18.0.6:36872 on port 1883.
+1759789201: Client noderedd807475e858d79fd disconnected, not authorised.
+1759789206: New connection from 172.18.0.6:43512 on port 1883.
+1759789206: Client noderedc8ed46035436d9ae disconnected, not authorised.
+1759789221: New connection from 172.18.0.6:42534 on port 1883.
+1759789221: Client noderedc8ed46035436d9ae disconnected, not authorised.
+1759789236: New connection from 172.18.0.6:36324 on port 1883.
+1759789236: Client noderedc8ed46035436d9ae disconnected, not authorised.
+1759789251: New connection from 172.18.0.6:60324 on port 1883.
+1759789251: Client noderedc8ed46035436d9ae disconnected, not authorised.
+1759789254: New connection from 172.18.0.6:54514 on port 1883.
+1759789254: Client nodered5f44aa5c1a114fcc disconnected, not authorised.
+1759789269: New connection from 172.18.0.6:47106 on port 1883.
+1759789269: Client nodered5f44aa5c1a114fcc disconnected, not authorised.
+1759789284: New connection from 172.18.0.6:43044 on port 1883.
+1759789284: Client nodered5f44aa5c1a114fcc disconnected, not authorised.
+1759789299: New connection from 172.18.0.6:47962 on port 1883.
+1759789299: Client nodered5f44aa5c1a114fcc disconnected, not authorised.
+1759789314: New connection from 172.18.0.6:36640 on port 1883.
+1759789314: Client nodered5f44aa5c1a114fcc disconnected, not authorised.
+1759789329: New connection from 172.18.0.6:44864 on port 1883.
+1759789329: Client nodered5f44aa5c1a114fcc disconnected, not authorised.
+1759789335: New connection from 172.18.0.6:44284 on port 1883.
+1759789335: Client noderedf4871900ef269ae4 disconnected, not authorised.
+1759789350: New connection from 172.18.0.6:57842 on port 1883.
+1759789350: Client noderedf4871900ef269ae4 disconnected, not authorised.
+1759789365: New connection from 172.18.0.6:37386 on port 1883.
+1759789365: Client noderedf4871900ef269ae4 disconnected, not authorised.
+1759789380: New connection from 172.18.0.6:35170 on port 1883.
+1759789380: Client noderedf4871900ef269ae4 disconnected, not authorised.
+1759789395: New connection from 172.18.0.6:56756 on port 1883.
+1759789395: Client noderedf4871900ef269ae4 disconnected, not authorised.
+1759789410: New connection from 172.18.0.6:36460 on port 1883.
+1759789410: Client noderedf4871900ef269ae4 disconnected, not authorised.
+1759789425: New connection from 172.18.0.6:35480 on port 1883.
+1759789425: Client noderedf4871900ef269ae4 disconnected, not authorised.
+1759789438: New connection from 172.18.0.6:38712 on port 1883.
+1759789438: Client nodered80ccf0cd2afee2ca disconnected, not authorised.
+1759789444: New connection from 172.18.0.6:52068 on port 1883.
+1759789444: Client noderedb47da7927cb531a0 disconnected, not authorised.
+1759789459: New connection from 172.18.0.6:45638 on port 1883.
+1759789459: Client noderedb47da7927cb531a0 disconnected, not authorised.
+1759789473: New connection from 172.18.0.6:54194 on port 1883.
+1759789473: Client nodered4a296c0802dde735 disconnected, not authorised.
+1759789488: New connection from 172.18.0.6:54410 on port 1883.
+1759789488: Client nodered4a296c0802dde735 disconnected, not authorised.
+1759789503: New connection from 172.18.0.6:47974 on port 1883.
+1759789503: Client nodered4a296c0802dde735 disconnected, not authorised.
+1759789519: New connection from 172.18.0.6:42550 on port 1883.
+1759789519: Client nodered0ed9d3a438f1b29b disconnected, not authorised.
+1759789534: New connection from 172.18.0.6:53268 on port 1883.
+1759789534: Client nodered0ed9d3a438f1b29b disconnected, not authorised.
+1759789549: New connection from 172.18.0.6:47272 on port 1883.
+1759789549: Client nodered0ed9d3a438f1b29b disconnected, not authorised.
+1759789564: New connection from 172.18.0.6:42116 on port 1883.
+1759789564: Client nodered0ed9d3a438f1b29b disconnected, not authorised.
+1759789579: New connection from 172.18.0.6:52792 on port 1883.
+1759789579: Client nodered0ed9d3a438f1b29b disconnected, not authorised.
+1759789583: New connection from 172.18.0.6:55132 on port 1883.
+1759789583: New client connected from 172.18.0.6:55132 as nodered8d6eedf4ce09c533 (p2, c1, k60, u'aluno').
+1759789966: Client nodered8d6eedf4ce09c533 disconnected.
+1759789966: New connection from 172.18.0.6:42596 on port 1883.
+1759789966: New client connected from 172.18.0.6:42596 as nodered6745ac259ed037ed (p2, c1, k60, u'aluno').
+1759790002: Client nodered6745ac259ed037ed disconnected.
+1759790002: New connection from 172.18.0.6:37376 on port 1883.
+1759790002: New client connected from 172.18.0.6:37376 as noderedc37677614bc46abf (p2, c1, k60, u'aluno').
+1759790105: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1759790172: Client noderedc37677614bc46abf disconnected.
+1759790172: New connection from 172.18.0.6:59802 on port 1883.
+1759790172: New client connected from 172.18.0.6:59802 as nodereda451380def3918d0 (p2, c1, k60, u'aluno').
+1759790225: Client nodereda451380def3918d0 disconnected.
+1759790225: New connection from 172.18.0.6:60206 on port 1883.
+1759790225: New client connected from 172.18.0.6:60206 as nodered5a6c1c8ce0e88d77 (p2, c1, k60, u'aluno').
+1759790252: Client nodered5a6c1c8ce0e88d77 disconnected.
+1759790252: New connection from 172.18.0.6:40704 on port 1883.
+1759790252: New client connected from 172.18.0.6:40704 as noderedb820b9ecaf79a0ee (p2, c1, k60, u'aluno').
+1759790280: Client noderedb820b9ecaf79a0ee disconnected.
+1759790280: New connection from 172.18.0.6:37258 on port 1883.
+1759790280: New client connected from 172.18.0.6:37258 as nodered91a2f4a076a04624 (p2, c1, k60, u'aluno').
+1759790305: Client nodered91a2f4a076a04624 disconnected.
+1759790305: New connection from 172.18.0.6:41144 on port 1883.
+1759790305: New client connected from 172.18.0.6:41144 as nodered325f14c14a91fbb8 (p2, c1, k60, u'aluno').
+1759790605: Client nodered325f14c14a91fbb8 disconnected.
+1759790605: New connection from 172.18.0.6:50744 on port 1883.
+1759790605: New client connected from 172.18.0.6:50744 as nodered85a969ed4efccbf3 (p2, c1, k60, u'aluno').
+1759790636: Client nodered85a969ed4efccbf3 disconnected.
+1759790636: New connection from 172.18.0.6:54302 on port 1883.
+1759790636: New client connected from 172.18.0.6:54302 as nodered888440848afc699c (p2, c1, k60, u'aluno').
+1759790906: Client noderede69b1d0d99110d1d disconnected.
+1759790906: New connection from 172.18.0.5:34008 on port 1883.
+1759790906: New client connected from 172.18.0.5:34008 as noderedca090f768044bce3 (p2, c1, k60, u'aluno').
+1759790918: Client nodered888440848afc699c disconnected.
+1759790918: New connection from 172.18.0.6:47618 on port 1883.
+1759790918: New client connected from 172.18.0.6:47618 as noderedcdb227c8e31c9bce (p2, c1, k60, u'aluno').
+1759791010: Client noderedcdb227c8e31c9bce disconnected.
+1759791010: New connection from 172.18.0.6:44990 on port 1883.
+1759791010: New client connected from 172.18.0.6:44990 as nodered587bf7ffb9d39b70 (p2, c1, k60, u'aluno').
+1759791094: Client nodered587bf7ffb9d39b70 disconnected.
+1759791094: New connection from 172.18.0.6:42298 on port 1883.
+1759791094: New client connected from 172.18.0.6:42298 as noderedeb9ce79a7fdef92a (p2, c1, k60, u'aluno').
+1759791197: Client noderedeb9ce79a7fdef92a disconnected.
+1759791197: New connection from 172.18.0.6:51990 on port 1883.
+1759791197: New client connected from 172.18.0.6:51990 as nodered995a796ec6be08ef (p2, c1, k60, u'aluno').
+1759791244: Client nodered995a796ec6be08ef disconnected.
+1759791244: New connection from 172.18.0.6:35800 on port 1883.
+1759791244: New client connected from 172.18.0.6:35800 as noderedb882d05dc4201ad3 (p2, c1, k60, u'aluno').
+1759791679: Client noderedb882d05dc4201ad3 disconnected.
+1759791679: New connection from 172.18.0.6:52910 on port 1883.
+1759791679: New client connected from 172.18.0.6:52910 as nodered102cb8ed1d4dc9d3 (p2, c1, k60, u'aluno').
+1759791825: Client nodered102cb8ed1d4dc9d3 disconnected.
+1759791825: New connection from 172.18.0.6:39062 on port 1883.
+1759791825: New client connected from 172.18.0.6:39062 as noderedfb4d17925c194023 (p2, c1, k60, u'aluno').
+1759791881: Client noderedfb4d17925c194023 disconnected.
+1759791881: New connection from 172.18.0.6:47852 on port 1883.
+1759791881: New client connected from 172.18.0.6:47852 as nodered0494fda4b9b9b9c8 (p2, c1, k60, u'aluno').
+1759791905: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1759791913: Client nodered0494fda4b9b9b9c8 disconnected.
+1759791913: New connection from 172.18.0.6:44362 on port 1883.
+1759791913: New client connected from 172.18.0.6:44362 as nodereda70a38a01f520655 (p2, c1, k60, u'aluno').
+1759792098: Client nodereda70a38a01f520655 disconnected.
+1759792098: New connection from 172.18.0.6:45344 on port 1883.
+1759792098: New client connected from 172.18.0.6:45344 as nodered5854a398671c7c09 (p2, c1, k60, u'aluno').
+1759792142: Client nodered5854a398671c7c09 disconnected.
+1759792142: New connection from 172.18.0.6:53504 on port 1883.
+1759792142: New client connected from 172.18.0.6:53504 as noderedfcaddd54609564c5 (p2, c1, k60, u'aluno').
+1759792229: Client noderedca090f768044bce3 disconnected.
+1759792229: New connection from 172.18.0.5:55046 on port 1883.
+1759792229: New client connected from 172.18.0.5:55046 as nodered22e6d201eb8ceb40 (p2, c1, k60, u'aluno').
+1759792243: Client noderedfcaddd54609564c5 disconnected.
+1759792243: New connection from 172.18.0.6:59694 on port 1883.
+1759792243: New client connected from 172.18.0.6:59694 as nodered923f4f85887b06bc (p2, c1, k60, u'aluno').
+1759792258: Client nodered923f4f85887b06bc disconnected.
+1759792258: New connection from 172.18.0.6:46874 on port 1883.
+1759792258: New client connected from 172.18.0.6:46874 as nodered9718e56b1ff21980 (p2, c1, k60, u'aluno').
+1759792313: Client nodered9718e56b1ff21980 disconnected.
+1759792313: New connection from 172.18.0.6:48386 on port 1883.
+1759792313: New client connected from 172.18.0.6:48386 as noderedb2c147dae794ebbd (p2, c1, k60, u'aluno').
+1759792329: Client noderedb2c147dae794ebbd disconnected.
+1759792329: New connection from 172.18.0.6:44688 on port 1883.
+1759792329: New client connected from 172.18.0.6:44688 as nodered66e5b5fffda914f6 (p2, c1, k60, u'aluno').
+1759792353: Client nodered66e5b5fffda914f6 disconnected.
+1759792353: New connection from 172.18.0.6:52444 on port 1883.
+1759792353: New client connected from 172.18.0.6:52444 as nodered618961ba45e03b6a (p2, c1, k60, u'aluno').
+1759792379: Client nodered618961ba45e03b6a disconnected.
+1759792379: New connection from 172.18.0.6:45186 on port 1883.
+1759792379: New client connected from 172.18.0.6:45186 as noderedc68e83a51d36d2eb (p2, c1, k60, u'aluno').
+1759792400: Client noderedc68e83a51d36d2eb disconnected.
+1759792400: New connection from 172.18.0.6:40390 on port 1883.
+1759792400: New client connected from 172.18.0.6:40390 as noderedac64c8b31cac4969 (p2, c1, k60, u'aluno').
+1759792461: Client noderedac64c8b31cac4969 disconnected.
+1759792461: New connection from 172.18.0.6:44548 on port 1883.
+1759792461: New client connected from 172.18.0.6:44548 as nodered54315a71b3ba0d8d (p2, c1, k60, u'aluno').
+1759792479: Client nodered54315a71b3ba0d8d disconnected.
+1759792479: New connection from 172.18.0.6:51502 on port 1883.
+1759792479: New client connected from 172.18.0.6:51502 as nodered4b234ce71af18295 (p2, c1, k60, u'aluno').
+1759792494: Client nodered4b234ce71af18295 disconnected.
+1759792494: New connection from 172.18.0.6:59394 on port 1883.
+1759792494: New client connected from 172.18.0.6:59394 as noderedb89361497d6b9228 (p2, c1, k60, u'aluno').
+1759792589: Client noderedb89361497d6b9228 disconnected.
+1759792589: New connection from 172.18.0.6:55420 on port 1883.
+1759792589: New client connected from 172.18.0.6:55420 as noderede890d8636f27d8bc (p2, c1, k60, u'aluno').
+1759792615: Client noderede890d8636f27d8bc disconnected.
+1759792615: New connection from 172.18.0.6:54794 on port 1883.
+1759792615: New client connected from 172.18.0.6:54794 as nodered1b4561f56d73d7c0 (p2, c1, k60, u'aluno').
+1759792639: Client nodered1b4561f56d73d7c0 disconnected.
+1759792639: New connection from 172.18.0.6:46316 on port 1883.
+1759792639: New client connected from 172.18.0.6:46316 as nodered3e1aef2af54c7957 (p2, c1, k60, u'aluno').
+1759792661: Client nodered3e1aef2af54c7957 disconnected.
+1759792661: New connection from 172.18.0.6:42666 on port 1883.
+1759792661: New client connected from 172.18.0.6:42666 as nodered043d2c40a34df8bb (p2, c1, k60, u'aluno').
+1759792681: Client nodered043d2c40a34df8bb disconnected.
+1759792681: New connection from 172.18.0.6:34010 on port 1883.
+1759792681: New client connected from 172.18.0.6:34010 as nodered2452ebed641cdbc6 (p2, c1, k60, u'aluno').
+1759792703: Client nodered2452ebed641cdbc6 disconnected.
+1759792703: Client nodered22e6d201eb8ceb40 disconnected.
+1759792704: mosquitto version 2.0.22 terminating
+1759792704: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1759792704: Client sub-99201e11db0178 closed its connection.
+1759792704: Client pub-73f623628823c closed its connection.
+1759792709: mosquitto version 2.0.22 starting
+1759792709: Config loaded from /mosquitto/config/mosquitto.conf.
+1759792709: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+1759792709: Opening ipv4 listen socket on port 1883.
+1759792709: Opening websockets listen socket on port 9001.
+1759792709: mosquitto version 2.0.22 running
+1759792709: New client connected from 172.18.0.1:54148 as pub-73f623628823c (p2, c1, k60, u'aluno').
+1759792709: New client connected from 172.18.0.1:54150 as sub-99201e11db0178 (p2, c1, k60, u'aluno').
+1759792713: New connection from 172.18.0.5:49132 on port 1883.
+1759792713: New client connected from 172.18.0.5:49132 as nodered1afcc2c5458968d9 (p2, c1, k60, u'aluno').
+1759792713: New connection from 172.18.0.6:34642 on port 1883.
+1759792713: New client connected from 172.18.0.6:34642 as nodered1450c4de696f0b98 (p2, c1, k60, u'aluno').
+1759792726: Client nodered1afcc2c5458968d9 disconnected.
+1759792726: New connection from 172.18.0.5:39204 on port 1883.
+1759792726: New client connected from 172.18.0.5:39204 as nodered13f4d857b397435b (p2, c1, k60, u'aluno').
+1759792899: Client nodered13f4d857b397435b disconnected.
+1759792899: New connection from 172.18.0.5:40782 on port 1883.
+1759792899: New client connected from 172.18.0.5:40782 as nodered974259f5352b642d (p2, c1, k60, u'aluno').
+1759792973: Client nodered974259f5352b642d disconnected.
+1759792973: New connection from 172.18.0.5:39616 on port 1883.
+1759792973: New client connected from 172.18.0.5:39616 as noderedccd191d915918f25 (p2, c1, k60, u'aluno').
+1759793038: Client noderedccd191d915918f25 disconnected.
+1759793038: New connection from 172.18.0.5:40920 on port 1883.
+1759793038: New client connected from 172.18.0.5:40920 as noderede40c63b722a8dd24 (p2, c1, k60, u'aluno').
+1759793109: Client noderede40c63b722a8dd24 disconnected.
+1759793109: New connection from 172.18.0.5:50060 on port 1883.
+1759793109: New client connected from 172.18.0.5:50060 as nodered0d12ceeb59a68bd0 (p2, c1, k60, u'aluno').
+1759793268: Client nodered0d12ceeb59a68bd0 disconnected.
+1759793268: New connection from 172.18.0.5:45306 on port 1883.
+1759793268: New client connected from 172.18.0.5:45306 as nodered3cb7f6292212b37f (p2, c1, k60, u'aluno').
+1759793422: Client nodered3cb7f6292212b37f disconnected.
+1759793422: New connection from 172.18.0.5:49526 on port 1883.
+1759793422: New client connected from 172.18.0.5:49526 as noderedd135cd2b31dd3508 (p2, c1, k60, u'aluno').
+1759793472: Client noderedd135cd2b31dd3508 disconnected.
+1759793472: New connection from 172.18.0.5:56534 on port 1883.
+1759793472: New client connected from 172.18.0.5:56534 as nodered389a672dd4fcfd6c (p2, c1, k60, u'aluno').
+1759793624: Client nodered389a672dd4fcfd6c disconnected.
+1759793624: New connection from 172.18.0.5:51472 on port 1883.
+1759793624: New client connected from 172.18.0.5:51472 as nodered360d3c33b89fdb24 (p2, c1, k60, u'aluno').
+1759793650: Client nodered360d3c33b89fdb24 disconnected.
+1759793650: New connection from 172.18.0.5:47220 on port 1883.
+1759793650: New client connected from 172.18.0.5:47220 as nodered703ca7b14a8bac1b (p2, c1, k60, u'aluno').
+1759793718: Client nodered703ca7b14a8bac1b disconnected.
+1759793718: New connection from 172.18.0.5:54426 on port 1883.
+1759793718: New client connected from 172.18.0.5:54426 as nodered709d069e6560f85b (p2, c1, k60, u'aluno').
+1759793736: Client nodered709d069e6560f85b disconnected.
+1759793736: New connection from 172.18.0.5:55168 on port 1883.
+1759793736: New client connected from 172.18.0.5:55168 as noderedcfa88a8d2bcaef4a (p2, c1, k60, u'aluno').
+1759793794: Client noderedcfa88a8d2bcaef4a disconnected.
+1759793794: New connection from 172.18.0.5:60274 on port 1883.
+1759793794: New client connected from 172.18.0.5:60274 as nodereda9e66e9fb57ba9fa (p2, c1, k60, u'aluno').
+1759793813: Client nodereda9e66e9fb57ba9fa disconnected.
+1759793813: New connection from 172.18.0.5:48174 on port 1883.
+1759793813: New client connected from 172.18.0.5:48174 as noderedeaad8913539e8f6e (p2, c1, k60, u'aluno').
+1759793891: Client noderedeaad8913539e8f6e disconnected.
+1759793891: New connection from 172.18.0.5:41200 on port 1883.
+1759793891: New client connected from 172.18.0.5:41200 as nodered759bbbb1c0930dd4 (p2, c1, k60, u'aluno').
+1759793926: Client nodered759bbbb1c0930dd4 disconnected.
+1759793926: New connection from 172.18.0.5:47208 on port 1883.
+1759793926: New client connected from 172.18.0.5:47208 as noderedd2cd7ac9338ac970 (p2, c1, k60, u'aluno').
+1759793954: Client noderedd2cd7ac9338ac970 disconnected.
+1759793954: New connection from 172.18.0.5:51896 on port 1883.
+1759793954: New client connected from 172.18.0.5:51896 as nodered36c154bef20d82a3 (p2, c1, k60, u'aluno').
+1759793977: Client nodered36c154bef20d82a3 disconnected.
+1759793977: New connection from 172.18.0.5:56108 on port 1883.
+1759793977: New client connected from 172.18.0.5:56108 as nodered9e2ceb1b16106f62 (p2, c1, k60, u'aluno').
+1759794041: Client nodered9e2ceb1b16106f62 disconnected.
+1759794041: New connection from 172.18.0.5:53026 on port 1883.
+1759794041: New client connected from 172.18.0.5:53026 as noderedf6cdb18e54462cd4 (p2, c1, k60, u'aluno').
+1759794090: Client noderedf6cdb18e54462cd4 disconnected.
+1759794090: New connection from 172.18.0.5:33818 on port 1883.
+1759794090: New client connected from 172.18.0.5:33818 as nodered7ce86d70004c1adf (p2, c1, k60, u'aluno').
+1759794107: Client nodered7ce86d70004c1adf disconnected.
+1759794107: New connection from 172.18.0.5:54998 on port 1883.
+1759794107: New client connected from 172.18.0.5:54998 as nodered4797f2c93bc6428e (p2, c1, k60, u'aluno').
+1759794130: Client nodered4797f2c93bc6428e disconnected.
+1759794130: New connection from 172.18.0.5:60448 on port 1883.
+1759794130: New client connected from 172.18.0.5:60448 as nodered6b1da24f4e9f7f40 (p2, c1, k60, u'aluno').
+1759794342: Client nodered6b1da24f4e9f7f40 disconnected.
+1759794342: New connection from 172.18.0.5:35930 on port 1883.
+1759794342: New client connected from 172.18.0.5:35930 as nodered653dea754bf09cab (p2, c1, k60, u'aluno').
+1759794509: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1759794702: Client nodered653dea754bf09cab disconnected.
+1759794702: New connection from 172.18.0.5:52508 on port 1883.
+1759794702: New client connected from 172.18.0.5:52508 as nodered65f2adba7845cd1d (p2, c1, k60, u'aluno').
+1759794723: Client nodered65f2adba7845cd1d disconnected.
+1759794723: New connection from 172.18.0.5:53648 on port 1883.
+1759794723: New client connected from 172.18.0.5:53648 as nodered3c556b6e26c96e49 (p2, c1, k60, u'aluno').
+1759794733: Client nodered3c556b6e26c96e49 disconnected.
+1759794733: New connection from 172.18.0.5:49272 on port 1883.
+1759794733: New client connected from 172.18.0.5:49272 as noderedddd4f90386b166f7 (p2, c1, k60, u'aluno').
+1759794854: Client noderedddd4f90386b166f7 disconnected.
+1759794854: New connection from 172.18.0.5:33822 on port 1883.
+1759794854: New client connected from 172.18.0.5:33822 as nodered12bacd7fb923b4eb (p2, c1, k60, u'aluno').
+1759794900: Client nodered12bacd7fb923b4eb disconnected.
+1759794900: New connection from 172.18.0.5:58392 on port 1883.
+1759794900: New client connected from 172.18.0.5:58392 as nodered7f010105b2ecb8d7 (p2, c1, k60, u'aluno').
+1759794926: Client nodered7f010105b2ecb8d7 disconnected.
+1759794926: New connection from 172.18.0.5:38342 on port 1883.
+1759794926: New client connected from 172.18.0.5:38342 as nodereda32bccd79d63168e (p2, c1, k60, u'aluno').
+1759794931: Client nodereda32bccd79d63168e disconnected.
+1759794931: New connection from 172.18.0.5:38356 on port 1883.
+1759794931: New client connected from 172.18.0.5:38356 as nodered978865bfc34c8840 (p2, c1, k60, u'aluno').
+1759794982: Client nodered978865bfc34c8840 disconnected.
+1759794982: New connection from 172.18.0.5:60738 on port 1883.
+1759794982: New client connected from 172.18.0.5:60738 as noderedac9075d02966fe12 (p2, c1, k60, u'aluno').
+1759795174: Client noderedac9075d02966fe12 disconnected.
+1759795174: New connection from 172.18.0.5:40992 on port 1883.
+1759795174: New client connected from 172.18.0.5:40992 as nodered1b924574aee48b50 (p2, c1, k60, u'aluno').
+1759795305: Client nodered1b924574aee48b50 disconnected.
+1759795305: New connection from 172.18.0.5:42652 on port 1883.
+1759795305: New client connected from 172.18.0.5:42652 as noderedab29f3f1bfec46de (p2, c1, k60, u'aluno').
+1759795439: Client noderedab29f3f1bfec46de disconnected.
+1759795439: New connection from 172.18.0.5:57782 on port 1883.
+1759795439: New client connected from 172.18.0.5:57782 as nodered46c25c2c6a7de6c4 (p2, c1, k60, u'aluno').
+1759795494: Client nodered46c25c2c6a7de6c4 disconnected.
+1759795494: New connection from 172.18.0.5:56828 on port 1883.
+1759795494: New client connected from 172.18.0.5:56828 as nodereda9745f6ac7f0deb8 (p2, c1, k60, u'aluno').
+1759795716: Client nodereda9745f6ac7f0deb8 disconnected.
+1759795716: New connection from 172.18.0.5:33326 on port 1883.
+1759795716: New client connected from 172.18.0.5:33326 as nodered3c8823273be0a95f (p2, c1, k60, u'aluno').
+1759795749: Client nodered3c8823273be0a95f disconnected.
+1759795749: New connection from 172.18.0.5:36670 on port 1883.
+1759795749: New client connected from 172.18.0.5:36670 as nodereda31afd0297ea4097 (p2, c1, k60, u'aluno').
+1759795790: Client nodereda31afd0297ea4097 disconnected.
+1759795790: New connection from 172.18.0.5:40430 on port 1883.
+1759795790: New client connected from 172.18.0.5:40430 as noderedac19223ccc245d30 (p2, c1, k60, u'aluno').
+1759795834: Client noderedac19223ccc245d30 disconnected.
+1759795834: New connection from 172.18.0.5:60178 on port 1883.
+1759795834: New client connected from 172.18.0.5:60178 as nodered5e7bb33b606428e0 (p2, c1, k60, u'aluno').
+1759795905: Client nodered5e7bb33b606428e0 disconnected.
+1759795905: New connection from 172.18.0.5:39914 on port 1883.
+1759795905: New client connected from 172.18.0.5:39914 as nodered244da7595cd7389c (p2, c1, k60, u'aluno').
+1759795936: Client nodered244da7595cd7389c disconnected.
+1759795936: New connection from 172.18.0.5:54020 on port 1883.
+1759795936: New client connected from 172.18.0.5:54020 as noderedf399f8de224ec80c (p2, c1, k60, u'aluno').
+1759795982: Client noderedf399f8de224ec80c disconnected.
+1759795982: New connection from 172.18.0.5:40454 on port 1883.
+1759795982: New client connected from 172.18.0.5:40454 as nodered7af45d67ea73be0e (p2, c1, k60, u'aluno').
+1759796024: Client nodered7af45d67ea73be0e disconnected.
+1759796024: New connection from 172.18.0.5:35738 on port 1883.
+1759796024: New client connected from 172.18.0.5:35738 as noderedb3cec0de5f3f9177 (p2, c1, k60, u'aluno').
+1759796105: Client noderedb3cec0de5f3f9177 disconnected.
+1759796105: New connection from 172.18.0.5:42458 on port 1883.
+1759796105: New client connected from 172.18.0.5:42458 as noderede19c874f2210752a (p2, c1, k60, u'aluno').
+1759796133: Client noderede19c874f2210752a disconnected.
+1759796133: New connection from 172.18.0.5:54844 on port 1883.
+1759796133: New client connected from 172.18.0.5:54844 as nodered8512e59e4ccada4a (p2, c1, k60, u'aluno').
+1759796310: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1759796440: Client nodered8512e59e4ccada4a disconnected.
+1759796440: New connection from 172.18.0.5:46146 on port 1883.
+1759796440: New client connected from 172.18.0.5:46146 as nodered83530466ae04684b (p2, c1, k60, u'aluno').
+1759796465: Client nodered83530466ae04684b disconnected.
+1759796465: New connection from 172.18.0.5:48432 on port 1883.
+1759796465: New client connected from 172.18.0.5:48432 as nodered3f0b37fba066e995 (p2, c1, k60, u'aluno').
+1759796642: Client nodered3f0b37fba066e995 disconnected.
+1759796642: New connection from 172.18.0.5:34618 on port 1883.
+1759796642: New client connected from 172.18.0.5:34618 as noderedb05753f0ef206baa (p2, c1, k60, u'aluno').
+1759796667: Client noderedb05753f0ef206baa disconnected.
+1759796667: New connection from 172.18.0.5:51264 on port 1883.
+1759796667: New client connected from 172.18.0.5:51264 as nodered4e9261851a3e4821 (p2, c1, k60, u'aluno').
+1759797121: Client nodered4e9261851a3e4821 disconnected.
+1759797121: New connection from 172.18.0.5:36820 on port 1883.
+1759797121: New client connected from 172.18.0.5:36820 as nodered60cb3a2a57bfdf5a (p2, c1, k60, u'aluno').
+1759797196: Client pub-73f623628823c closed its connection.
+1759797196: Client sub-99201e11db0178 closed its connection.
+1759797203: Client nodered60cb3a2a57bfdf5a disconnected.
+1759797203: Client nodered1450c4de696f0b98 disconnected.
+1759797204: mosquitto version 2.0.22 terminating
+1759797204: Saving in-memory database to /mosquitto/data//mosquitto.db.

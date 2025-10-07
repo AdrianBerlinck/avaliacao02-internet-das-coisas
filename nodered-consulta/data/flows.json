@@ -68,7 +68,7 @@
         "maxIdleTimeMS": "0",
         "uri": "",
         "advanced": "{}",
-        "uriTabActive": "tab-uri-simple"
+        "uriTabActive": "tab-uri-advanced"
     },
     {
         "id": "955b0537cc1cd302",
@@ -156,7 +156,7 @@
         "handleDocId": false,
         "name": "Device",
         "x": 970,
-        "y": 360,
+        "y": 380,
         "wires": [
             []
         ]

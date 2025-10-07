@@ -1,0 +1,375 @@
+[
+    {
+        "id": "9820ba1e4bce5a3c",
+        "type": "tab",
+        "label": "Fluxo 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2a8c51785cbd6b8f",
+        "type": "mqtt-broker",
+        "name": "broker",
+        "broker": "mosquitto",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "49c4a68006a19acb",
+        "type": "mongodb4-client",
+        "name": "conexaomongo",
+        "protocol": "mongodb",
+        "hostname": "mongo",
+        "port": "27017",
+        "dbName": "prova",
+        "appName": "",
+        "authSource": "",
+        "authMechanism": "DEFAULT",
+        "tls": false,
+        "tlsCAFile": "",
+        "tlsCertificateKeyFile": "",
+        "tlsInsecure": false,
+        "connectTimeoutMS": "30000",
+        "socketTimeoutMS": "0",
+        "minPoolSize": "0",
+        "maxPoolSize": "100",
+        "maxIdleTimeMS": "0",
+        "uri": "",
+        "advanced": "{}",
+        "uriTabActive": "tab-uri-simple"
+    },
+    {
+        "id": "7a26220206c5d076",
+        "type": "mongodb4-client",
+        "name": "conectmongo",
+        "protocol": "mongodb",
+        "hostname": "mongo",
+        "port": "27017",
+        "dbName": "prova",
+        "appName": "",
+        "authSource": "",
+        "authMechanism": "DEFAULT",
+        "tls": false,
+        "tlsCAFile": "",
+        "tlsCertificateKeyFile": "",
+        "tlsInsecure": false,
+        "connectTimeoutMS": "30000",
+        "socketTimeoutMS": "0",
+        "minPoolSize": "0",
+        "maxPoolSize": "100",
+        "maxIdleTimeMS": "0",
+        "uri": "",
+        "advanced": "{}",
+        "uriTabActive": "tab-uri-simple"
+    },
+    {
+        "id": "883ca93e2acf564f",
+        "type": "postgreSQLConfig",
+        "name": "pgconect",
+        "host": "localhost",
+        "hostFieldType": "str",
+        "port": "5432",
+        "portFieldType": "num",
+        "database": "iot",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "applicationName": "",
+        "applicationNameType": "str",
+        "max": 10,
+        "maxFieldType": "num",
+        "idle": 1000,
+        "idleFieldType": "num",
+        "connectionTimeout": 10000,
+        "connectionTimeoutFieldType": "num",
+        "user": "admin",
+        "userFieldType": "str",
+        "password": "admin",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "93f4213eba442116",
+        "type": "mqtt in",
+        "z": "9820ba1e4bce5a3c",
+        "name": "",
+        "topic": "device/+/temperatura",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "2a8c51785cbd6b8f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 280,
+        "wires": [
+            [
+                "03d1d5730a219ac9"
+            ]
+        ]
+    },
+    {
+        "id": "e8c0ac88943592bb",
+        "type": "mqtt in",
+        "z": "9820ba1e4bce5a3c",
+        "name": "",
+        "topic": "device/+/info",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "2a8c51785cbd6b8f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 160,
+        "wires": [
+            [
+                "395426cd584dd8d6"
+            ]
+        ]
+    },
+    {
+        "id": "395426cd584dd8d6",
+        "type": "uuid",
+        "z": "9820ba1e4bce5a3c",
+        "uuidVersion": "v4",
+        "namespaceType": "",
+        "namespace": "",
+        "namespaceCustom": "",
+        "name": "",
+        "field": "payload._id",
+        "fieldType": "msg",
+        "x": 350,
+        "y": 160,
+        "wires": [
+            [
+                "72f94d8fe516fbfd"
+            ]
+        ]
+    },
+    {
+        "id": "72f94d8fe516fbfd",
+        "type": "function",
+        "z": "9820ba1e4bce5a3c",
+        "name": "function 1",
+        "func": "const deviceId = msg.payload.device_id;\nif (!deviceId) return null;\n\nmsg.collection = \"devices\";\nmsg.operation = \"updateOne\";\n\nconst update = {\n    $set: {\n        device_id: deviceId,\n        update_at: new Date(),\n        status: {\n            last_info_ts: new Date(),\n        },\n        raw: JSON.stringify(msg.payload)\n    },\n    $setOnInsert: { created_at: new Date(), _id: msg.payload._id }\n}\n\nmsg.payload = [{ device_id: deviceId }, update, { upsert: true }];\n\nmsg._wsEvent = {\n    kind: 'telemetry',\n    id: deviceId,\n    data: msg.payload,\n    retain: msg.retain\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 160,
+        "wires": [
+            [
+                "78f1b96852d13b1e"
+            ]
+        ]
+    },
+    {
+        "id": "d5eeecb7f7f11b24",
+        "type": "switch",
+        "z": "9820ba1e4bce5a3c",
+        "name": "",
+        "property": "payload.temperatura",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lt",
+                "v": "5",
+                "vt": "num"
+            },
+            {
+                "t": "gte",
+                "v": "5",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 590,
+        "y": 280,
+        "wires": [
+            [
+                "95b80419e5b58b40"
+            ],
+            [
+                "3c77dd39b43da9c7",
+                "e332bf46a16e59a6"
+            ]
+        ]
+    },
+    {
+        "id": "78f1b96852d13b1e",
+        "type": "mongodb4",
+        "z": "9820ba1e4bce5a3c",
+        "clientNode": "7a26220206c5d076",
+        "mode": "collection",
+        "collection": "",
+        "operation": "",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": false,
+        "name": "",
+        "x": 870,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "03d1d5730a219ac9",
+        "type": "uuid",
+        "z": "9820ba1e4bce5a3c",
+        "uuidVersion": "v4",
+        "namespaceType": "",
+        "namespace": "",
+        "namespaceCustom": "",
+        "name": "",
+        "field": "payload._id",
+        "fieldType": "msg",
+        "x": 350,
+        "y": 280,
+        "wires": [
+            [
+                "d5eeecb7f7f11b24"
+            ]
+        ]
+    },
+    {
+        "id": "95b80419e5b58b40",
+        "type": "function",
+        "z": "9820ba1e4bce5a3c",
+        "name": "function 2",
+        "func": "const deviceId = msg.payload.device_id;\nif (!deviceId) return null;\n\nmsg.collection = \"temperatura\";\nmsg.operation = \"updateOne\";\nmsg.temperatura = msg.payload.temperatura\n\nconst update = {\n    $set: {\n        device_id: deviceId,\n        temperatura: msg.payload.temperatura,\n        update_at: new Date(),\n        status: {\n            last_info_ts: new Date(),\n        },\n        raw: JSON.stringify(msg.payload)\n    },\n    $setOnInsert: { created_at: new Date(), _id: msg.payload._id }\n}\n\nmsg.payload = [{ device_id: deviceId }, update, { upsert: true }];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 260,
+        "wires": [
+            [
+                "d288ecc14d6f7a70"
+            ]
+        ]
+    },
+    {
+        "id": "d288ecc14d6f7a70",
+        "type": "mongodb4",
+        "z": "9820ba1e4bce5a3c",
+        "clientNode": "7a26220206c5d076",
+        "mode": "collection",
+        "collection": "",
+        "operation": "",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": false,
+        "name": "",
+        "x": 970,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c827dd57b6d0c6a2",
+        "type": "postgresql",
+        "z": "9820ba1e4bce5a3c",
+        "name": "",
+        "query": "SELECT * FROM ;",
+        "postgreSQLConfig": "883ca93e2acf564f",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1010,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3c77dd39b43da9c7",
+        "type": "function",
+        "z": "9820ba1e4bce5a3c",
+        "name": "function 3",
+        "func": "var objeto = {\n    \n};\n\nobjeto.query = `INSERT INTO sensores (id, temperatura, topic) VALUES ($1, $2, $3)`;\nobjeto.params = [\n    msg.payload.device_id,\n    msg.payload.temperatura,\n    msg.topic\n]\n\nmsg = {};\nmsg = objeto;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 360,
+        "wires": [
+            [
+                "c827dd57b6d0c6a2",
+                "213aa98a4329c4d5"
+            ]
+        ]
+    },
+    {
+        "id": "e332bf46a16e59a6",
+        "type": "debug",
+        "z": "9820ba1e4bce5a3c",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "213aa98a4329c4d5",
+        "type": "debug",
+        "z": "9820ba1e4bce5a3c",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1000,
+        "y": 460,
+        "wires": []
+    }
+]
